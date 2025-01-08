@@ -38,8 +38,6 @@ function scrollToImage(index, carouselWrapper, images) {
     });
 }
 
-scrollToImage(currentIndex);
-
 
 function toggleMusic(path) {
     const element = document.querySelector("#music img");
@@ -58,23 +56,24 @@ function toggleMusic(path) {
     }
 }
 
+// Fonction pour changer le thème
 function changeTheme() {
     const link = document.getElementById('theme');
     const button = document.getElementById('theme-btn');
     const currentTheme = link.href.includes('sombre.css') ? 'sombre.css' : 'clair.css';
     const newTheme = currentTheme === 'sombre.css' ? 'clair.css' : 'sombre.css';
 
-    // Vérifier si on est sur index.html ou une autre page
-    if (window.location.pathname.endsWith("index.html")) {
-        // Comportement pour index.html
-        link.href = `CSS/${newTheme}`;
-        localStorage.setItem('selected-theme', newTheme);
-    } else {
-        // Comportement pour les autres pages dans HTML/
-        link.href = `../CSS/${newTheme}`;
-        localStorage.setItem('selected-theme', newTheme);
-        console.log(newTheme)
-    }
+    // Déterminer le chemin en fonction de la page actuelle
+    const isIndexPage = window.location.pathname.endsWith("index.html");
+    link.href = isIndexPage ? `CSS/${newTheme}` : `../CSS/${newTheme}`;
+
+    // Enregistrer le thème dans le localStorage
+    localStorage.setItem('selected-theme', newTheme);
+
+    // Log pour déboguer
+    /*console.log(`Thème changé : ${newTheme}`);
+    console.log(`Chemin appliqué : ${link.href}`);
+    console.log(`Thème enregistré dans localStorage : ${localStorage.getItem('selected-theme')}`);*/
 
     // Ajouter une animation de rotation au bouton
     button.classList.add('tourne');
@@ -82,6 +81,21 @@ function changeTheme() {
         button.classList.remove('tourne');
     }, 2000);
 }
+
+// Appliquer le thème sélectionné au chargement de la page
+document.addEventListener('DOMContentLoaded', () => {
+    const link = document.getElementById('theme');
+    const savedTheme = localStorage.getItem('selected-theme');
+    const isIndexPage = window.location.pathname.endsWith("index.html");
+
+    if (savedTheme) {
+        link.href = isIndexPage ? `CSS/${savedTheme}` : `../CSS/${savedTheme}`;
+        /*console.log(`Thème appliqué au chargement : ${savedTheme}`);*/
+    } else {
+        /*console.log('Aucun thème enregistré dans localStorage.');*/
+    }
+});
+
 
 /*
 window.onload = function () {
