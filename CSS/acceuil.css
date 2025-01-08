@@ -1,0 +1,284 @@
+.marge-en-tete{
+    background-image: url("../IMAGES/ACCUEIL/marge-fond.jpg");
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    height: 4em;
+    font-size: 1em;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+}
+
+.menu-liens {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.menu-liens a {
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 15px;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+}
+
+.menu-liens a:hover{
+    border-radius: 20px;
+}
+
+.menu-elem {
+    position: relative;
+}
+
+.menu-elem .sous-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 10px 0;
+    min-width: 200px;
+    z-index: 10;
+}
+
+.menu-elem:hover .sous-menu {
+    display: block;
+    border-radius: 20px;
+}
+
+.sous-menu a {
+    display: block;
+    padding: 10px 15px;
+}
+
+.sous-menu-elem {
+    position: relative;
+}
+
+.sous-menu-elem .sous-sous-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    padding: 10px 0;
+    min-width: 200px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+
+.sous-menu-elem:hover .sous-sous-menu {
+    display: block;
+}
+
+.menu-elem:hover > .sous-menu,
+.sous-menu-elem:hover > .sous-sous-menu {
+    display: block;
+}
+
+.actif{
+    border-radius: 20px;
+}
+
+.separation {
+    width: 2px;
+    background: white; 
+    margin: 0 20px;
+    height: auto;
+}
+
+.grand{
+    font-size: 2em;
+}
+
+article p{
+    padding: 20px; 
+    margin: 0px 25px -15px 0px;
+    font-size: 1.5em;
+}
+
+.description{
+    display: flex;
+}
+
+.titre{
+    text-align: center;
+    font-size: 350%;
+}
+
+.description img{
+    border-radius: 50%;
+}
+
+section{
+    padding: 0 3% 0 3%;
+}
+
+.funfact{
+    padding: 20px;
+    border-radius: 20px;
+    margin: 50px;
+}
+
+.funfact h2 span{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 10%;
+}
+
+h2{
+    font-size: 3em;
+}
+
+.jaquette-licence{
+    height: 300px;
+    border-radius: 50px !important;
+}
+
+
+/* Le conteneur global de la chronologie */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* La ligne verticale de la chronologie */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+/* Conteneur autour du contenu */
+.conteneur {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+/* Les cercles sur la chronologie */
+.conteneur::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Placer le conteneur à gauche */
+.gauche {
+    left: -6.75%;
+}
+
+/* Placer le conteneur à droite */
+.droite {
+    left: 50%;
+}
+
+/* Ajouter des flèches au conteneur de gauche (pointant vers la droite) */
+.gauche::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+}
+
+/* Ajouter des flèches au conteneur de droite (pointant vers la gauche) */
+.droite::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+/* Ajuster le cercle pour les conteneurs à droite */
+.droite::after {
+    left: -16px;
+}
+
+/* Le contenu réel */
+.contenu {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+}
+
+/* Media queries - Chronologie réactive pour les écrans de moins de 600px de large */
+@media screen and (max-width: 600px) {
+    /* Placer la chronologie à gauche */
+    .timeline::after {
+        left: 31px;
+    }
+
+    /* Conteneurs pleine largeur */
+    .conteneur {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    /* S'assurer que toutes les flèches pointent vers la gauche */
+    .conteneur::before {
+        left: 60px;
+        background-color: white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+    }
+
+    /* S'assurer que tous les cercles sont au même endroit */
+    .gauche::after, .droite::after {
+        left: 15px;
+    }
+
+    /* Faire en sorte que tous les conteneurs à droite se comportent comme ceux à gauche */
+    .droite {
+        left: 0%;
+    }
+    .gauche{
+        left: 0%;
+    }
+}
+
+.timeline .conteneur h2{
+    font-size: 1.5em;
+}
+
+.timeline .conteneur span{
+    width: 30px;
+    height: 30px;
+}

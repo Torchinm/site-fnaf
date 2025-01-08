@@ -1,0 +1,139 @@
+.marge-en-tete{
+    background-image: url("../IMAGES/avis/FNAF_1_Animatronic_Banner.webp");
+}
+
+section#contact {
+    background-image: url("../IMAGES/avis/Springtrap_Menu.webp");
+    padding: 50px 0;
+}
+
+section#contact .container {
+    max-width : 1100px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    padding: 30px 10px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    box-shadow: 0 10px 50px -10px #ff0000;
+}
+
+section#contact .container .title {
+    text-align: center;
+    color: #D3D3D3;
+    margin-bottom: 50px;
+}
+
+h6 {
+    color: #ff0000;
+}
+
+h1 {
+    font-weight: bold;
+    color: #D3D3D3;
+}
+
+section#contact .container .title h6 {
+    font-size: 1em;
+}
+
+section#contact .container .title h1 {
+    font-size: 3em;
+}
+
+section#contact .container form p {
+    color: #D3D3D3;
+    font-weight: bold;
+}
+
+section#contact .container form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 600px;
+}
+
+section#contact .container form input {
+    width: 30%;
+}
+
+section#contact .container form input:hover, section#contact .container form textarea:hover {
+    border-bottom: 5px solid #ff0000;
+}
+
+section#contact .container form input, section#contact .container form textarea {
+    margin: 10px 0;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    border-bottom: 5px solid #ffffff;
+    transition: 0.2s;
+}
+
+section#contact .container form textarea {
+    width: 100%;
+    height: 100px;
+}
+
+section#contact .container form button {
+    width: 100px;
+    height: 50px;
+    border-radius: 8px;
+    border: none;
+    background-color: #ff0000;
+    color: #D3D3D3;
+    font-weight: bold;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-top: 50px;
+    outline: none;
+    margin: 0 auto;
+    transition: 0.2s;
+}
+
+section#contact .container form button:hover {
+    transform: translateY(5px);
+}
+
+
+footer {
+    background-color: #AA9058;
+    color: white;
+}
+  
+footer img {
+    height: 50px;
+}
+  
+footer p {
+    display: flex;
+    align-items: center;
+}
+
+
+@media screen {
+    section#contact .container form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 600px;
+        flex-direction: column;
+        width: 95%;
+    }
+
+    section#contact .container form input {
+        width: 100%;
+    }
+
+    section#contact .container .title h6 {
+        font-size: 1em;
+    }
+    
+    section#contact .container .title h1 {
+        font-size: 2em;
+    }
+}

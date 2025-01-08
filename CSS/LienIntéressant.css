@@ -1,0 +1,98 @@
+.marge-en-tete{
+    background-image: url("../IMAGES/LienIntéressant/baniere.png");
+    display: flex;  
+    justify-content: flex-end; 
+}
+
+.title {
+    text-align: center;
+    font-size: 350%;
+}
+
+.music{
+    width: 300px;
+    height: 175px;
+}
+
+.music2 {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 55%;
+}
+
+figure {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 25px;
+    margin: 0px 25px 15px 0px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+article p {
+    margin-top: 10px;
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+article{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.fandom {
+    margin-top: 10px;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center ;
+  }
+  
+  .flex-container > div {
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+  }
+
+.perso {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 55%;
+    margin: 0px 25px 15px 50px;
+}
+
+.rere {
+    margin: 0px 150px 0px 10px;
+}
+
+.rore {
+    margin: 0px 50px 0px 90px;
+}
+
+footer {
+    background-color: #AA9058;
+    color: white;
+}
+  
+footer img {
+    height: 50px;
+}
+  
+footer p {
+    display: flex;
+    align-items: center;
+}

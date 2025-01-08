@@ -1,0 +1,74 @@
+body{
+    background-color: #D3D3D3;
+}
+
+header{
+    background-color: #a98f58;
+}
+
+nav{
+    background-color: #E8C67E;
+}
+
+.menu-elem .sous-menu {
+    background-color: #AA9058;
+}
+
+.sous-menu-elem .sous-sous-menu {
+    background-color: #AA9058;
+}
+
+.sous-menu a:hover {
+    background-color: #877346;
+}
+
+.actif{
+    background-color: #ffe7ba;
+    color: black;
+}
+
+.sous-menu a:hover {
+    background-color: #2b1741;
+}
+
+.menu-liens a{
+    color: black;
+}
+
+.menu-liens a:hover{
+    background-color: #cbae6e;
+}
+
+#theme-btn{
+    background-image: url("../IMAGES/sun.png");
+}
+
+footer{
+  background-color: #AA9058;
+  color: white;
+}
+
+.rectangle{
+    background-color: #E8C67E;
+}
+
+.funfact{
+    background-color: #E8C67E;
+}
+
+.funfact h2 span{
+    background-color: #AA9058;
+}
+
+.conteneur::after{
+    background-color: white;
+    border: 4px solid #FF9F55;
+}
+
+.timeline::after{
+    background-color: white;
+}
+
+hr{
+    background-color: #000000;
+}

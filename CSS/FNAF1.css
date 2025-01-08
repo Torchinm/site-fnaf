@@ -1,0 +1,8 @@
+.marge-en-tete{
+    background-image: url("../IMAGES/FNAF1/fnaf1_baniere.png");
+}
+
+.marge-en-tete{
+    display: flex;  
+    justify-content: flex-end; 
+  }

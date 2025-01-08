@@ -1,0 +1,111 @@
+.marge-en-tete{
+    display: flex;  
+    justify-content: flex-end; 
+}
+  
+.title {
+  text-align: center;
+  font-size: 350%;
+}
+
+hr {
+  height: 0.05%;
+}
+
+h1{
+  font-size: 2em;
+}
+
+section{
+  display: flex;
+  margin: 50px 0px 50px 0px;
+  justify-content: space-between;
+}
+  
+.rectangle {
+  width: 320px;
+  height: 420px;
+  border-radius: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.jaquette {
+  width: 300px;
+  height: 300px;
+  border-radius: 15%;
+  margin: 20px 20px 0px 25px;
+}
+
+.rectangle div{
+  display: flex;
+}
+
+.steam {
+  width: 90px;
+  height: 90px;
+  border-radius: 55%;
+  margin: 10px 0px 0px 25px;
+  text-decoration: none;
+}
+
+.prix {
+  font-size: 2em;
+  margin: 35px 50px 40px 35px;
+}
+
+article p {
+  padding: 20px; 
+  border-left: 60%;
+  margin: 0px 25px -15px 0px;
+  font-size: 22px;
+}
+
+.perso {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 5%;
+  margin: 20px 25px 20px 50px;
+}
+
+.perso1 {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 5%;
+  margin: 20px 25px 20px 450px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center ;
+}
+
+.flex-container > div {
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+
+.rere {
+  margin: 10px 150px 10px 150px;
+  background: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+}
+  
+.pppp {
+    margin: 130px 10px 0px 10px;
+}
+
+.casting{
+  flex-direction: column;
+}
+
+.rere div{
+  display: flex;
+}

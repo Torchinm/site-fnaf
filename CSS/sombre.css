@@ -1,0 +1,128 @@
+body{
+    background-color: #2C2C2C;
+    color: white;
+}
+
+header{
+    background-color: #3D1F5E;
+}
+
+nav{
+    background-color: #542F7D;
+}
+
+.menu-elem .sous-menu {
+    background-color: #3D1F5E;
+}
+
+.sous-menu-elem .sous-sous-menu {
+    background-color: #3D1F5E;
+}
+
+.sous-menu a:hover {
+    background-color: #321255;
+}
+
+.actif{
+    background-color: #AB86C8;
+}
+
+.sous-menu a:hover {
+    background-color: #2b1741;
+}
+
+.menu-liens a{
+    color: white;
+}
+
+.menu-liens a:hover{
+    background-color: #cbae6e;
+}
+
+#theme-btn{
+    background-image: url("../IMAGES/moon.png");
+}
+
+footer{
+  background-color: #542F7D;
+  color: white;
+}
+
+.rectangle{
+    background-color: #542F7D;
+}
+
+.funfact{
+    background-color: #542F7D;
+}
+
+.funfact h2 span{
+    background-color: #3D1F5E;
+}
+
+.conteneur::after{
+    background-color: white;
+    border: 4px solid #542F7D;
+}
+
+.timeline::after{
+    background-color: #542F7D;
+}
+
+hr{
+    background-color: white;
+}
+
+/* Ajouter des flèches au conteneur de gauche (pointant vers la droite) */
+.gauche::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid #542F7D;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #542F7D;
+}
+
+/* Ajouter des flèches au conteneur de droite (pointant vers la gauche) */
+.droite::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid #542F7D;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #542F7D transparent transparent;
+}
+
+/* Ajuster le cercle pour les conteneurs à droite */
+.droite::after {
+    left: -16px;
+}
+
+.contenu{
+    background-color: #542F7D;
+}
+
+.conteneur::before{
+    background-color: #542F7D;
+    border-color: transparent #542F7D transparent transparent;
+}
+
+.sous-menu a:hover {
+    background-color: #2b1741;
+}
+
+.menu-liens a:hover{
+    background-color: #2b1741;
+}
+
+.rere{
+    background: #575757;
+}

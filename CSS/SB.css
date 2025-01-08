@@ -1,0 +1,8 @@
+.marge-en-tete{
+    background-image: url("../IMAGES/SB/baniere.jpg");
+}
+
+.marge-en-tete{
+    display: flex;  
+    justify-content: flex-end; 
+  }
