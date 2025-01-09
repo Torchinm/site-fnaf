@@ -484,6 +484,9 @@ iframe {
     .separation {
         display: none;
   }
+    p{
+        text-align: justify;
+    }
 }
 
 #personnagesrespon {
