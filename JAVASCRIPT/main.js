@@ -96,23 +96,17 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
+function togglePanel(panelIdToToggle) {
+    const panelToToggle = document.getElementById(panelIdToToggle);
+    const nav = document.querySelector("nav");
 
-/*
-window.onload = function () {
-    const savedTheme = localStorage.getItem('selected-theme') || 'clair.css';
-    const link = document.getElementById('theme');
-    console.log(savedTheme)
+    panelToToggle.style.width = panelToToggle.style.width === "100%" ? "0%" : "100%";
 
-    // Récupérer le nom de la page actuelle
-    const currentPath = window.location.pathname;
-
-    // Appliquer le chemin correct pour les thèmes
-    if (currentPath.endsWith("index.html") || currentPath === "/") {
-        // Si on est sur index.html ou la racine du site
-        link.href = `CSS/${savedTheme}`;
-    } else {
-        // Si on est sur une autre page dans HTML/
-        link.href = `../CSS/${savedTheme}`;
+    if (panelIdToToggle === "mainMenuPanel") {
+        if (panelToToggle.style.width === "100%") {
+            nav.classList.remove("sticky");
+        } else {
+            nav.classList.add("sticky");
+        }
     }
-};
-*/
+}
