@@ -482,10 +482,7 @@ iframe {
         width: 100%;
     }
     .separation {
-    width: 2px;
-    background: white; 
-    margin: 0 20px;
-    height: auto;
+        display: none;
   }
 }
 
