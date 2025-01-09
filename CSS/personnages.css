@@ -63,3 +63,13 @@ article p {
     padding: 20px;
     font-size: 30px;
   }
+
+  @media (max-width: 768px) {
+    section{
+        display: flex;
+        flex-direction: column;
+    }
+    .rectangle{
+      margin: 10px 20% 10px 20%;
+    }
+}

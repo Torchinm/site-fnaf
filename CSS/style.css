@@ -301,9 +301,10 @@ footer div{
     display: flex;
     justify-content: center;
     margin: 50px 0px 50px 0px;
-    img{
-        cursor: pointer;
-    }
+}
+
+.musiques img{
+    cursor: pointer;
 }
 
 .tourne {
@@ -349,4 +350,154 @@ footer div{
 
 #sensible h2 span {
     background-color: orange;
+}
+
+
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+    display: none;
+}
+  
+.overlay-content {
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    display: flex !important;
+    flex-direction: column;
+}
+
+.overlay-content a{
+    text-decoration: none;
+    color: white;
+}
+
+.overlay-content .actif{
+    padding: 10px;
+    color: black;
+}
+
+.overlay div {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+  
+.overlay div:hover, .overlay div:focus {
+    color: #f1f1f1;
+}
+  
+.overlay .closebtn {
+    position: absolute;
+    top: 10%;
+    right: 45px;
+    font-size: 60px;
+    color: white;
+    text-decoration: none;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay div {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+}
+
+.respons {
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: all 1s ease-in-out;
+    font-size: 1.5em;
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+    .respons{
+        display: block;
+    }
+    .menu-liens{
+        display: none !important;
+    }
+    .overlay{
+        display: block;
+    }
+}
+
+.overlay-content a:hover {
+    background-color: #2b1741;
+    color: yellow;
+    border-radius: 5px;
+    text-decoration: underline;
+}
+
+.overlay-content a{
+    padding: 10px;
+}
+
+iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    max-width: 100%;
+    display: block;
+    border: none;
+}
+
+@media (max-width: 768px) {
+    iframe {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+        max-width: 100%;
+        display: block;
+        border: none;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        padding-left: 10px;
+    }
+    footer div{
+        border-bottom: white solid 2px;
+        width: 100%;
+    }
+}
+
+#personnagesrespon {
+    all: unset;
+    background-color: initial;
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+    width: auto;
+    height: auto;
+    font-size: initial;
+    font-weight: normal;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    position: static;
+    overflow: visible;
+    z-index: auto;
 }

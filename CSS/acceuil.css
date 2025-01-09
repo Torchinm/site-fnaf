@@ -239,7 +239,7 @@ h2{
 }
 
 /* Media queries - Chronologie réactive pour les écrans de moins de 600px de large */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     /* Placer la chronologie à gauche */
     .timeline::after {
         left: 31px;
@@ -247,7 +247,7 @@ h2{
 
     /* Conteneurs pleine largeur */
     .conteneur {
-        width: 100%;
+        width: 80%;
         padding-left: 70px;
         padding-right: 25px;
     }
@@ -281,4 +281,30 @@ h2{
 .timeline .conteneur span{
     width: 30px;
     height: 30px;
+}
+
+.scott{
+    height: 20%;
+}
+
+@media (max-width: 768px) {
+    .scott{
+        height: 10%;
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+    }
+    article{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .funfact{
+        width: fit-content;
+    }
+    .description{
+        display: flex;
+        flex-direction: column;
+    }
 }
