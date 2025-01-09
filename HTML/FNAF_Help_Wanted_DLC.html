@@ -19,6 +19,7 @@
         <h1>Five<br>Night<br>at<br>Freddy's<br><br></h1>
     </div>
     <nav class="sticky">
+      <span class="respons" onclick="togglePanel('mainMenuPanel')">☰</span>
         <div class="menu">
             <div class="menu-liens">
                 <a href="../index.html">Accueil</a>
@@ -429,6 +430,465 @@
             <button id="theme-btn" onclick="changeTheme()"></button>
         </div>
     </nav>
+    <div id="mainMenuPanel" class="overlay">
+        <button class="closebtn" onclick="togglePanel('mainMenuPanel')">&times;</button>
+        <div class="overlay-content">
+            <div class="menu">
+                <div>
+                    <a href="../index.html">Accueil</a>
+                    <div class="menu-elem">
+                        <a href="#" onclick="togglePanel('jeuxPanel')" class="actif">Jeux▽</a>
+                        <div id="jeuxPanel" class="overlay">
+                            <button class="closebtn" onclick="togglePanel('jeuxPanel')">&times;</button>
+                            <div class="overlay-content">
+                                <p>Jeux</p>
+                                <a href="FNAF1.html">FNAF 1</a>
+                                <a href="FNAF2.html">FNAF 2</a>
+                                <a href="FNAF3.html">FNAF 3</a>
+                                <a href="FNAF4.html">FNAF 4</a>
+                                <a href="FNAF4_Halloween.html">FNAF 4 Halloween</a>
+                                <a href="Sister_Location.html">FNAF Sister Location</a>
+                                <a href="FNAF_World.html">FNAF World</a>
+                                <a href="FNAF_Pizza_Simulator.html">FNAF Pizzeria Simulator</a>
+                                <a href="Ultimate_Custom_Night.html">FNAF Ultimate Custom Night</a>
+                                <a href="FNAF_Help_Wanted.html">FNAF Help Wanted</a>
+                                <a href="FNAF_Help_Wanted_DLC.html" class="actif">FNAF Help Wanted DLC</a>
+                                <a href="Special_Delivery.html">FNAF Special Delivery</a>
+                                <a href="Security_Breach.html">FNAF Security Breach</a>
+                                <a href="Security_Breach_Ruin.html">FNAF Security Breach Ruin</a>
+                                <a href="Help_Wanted_2.html">FNAF Help Wanted 2</a>
+                                <a href="Into_The_Pit.html">FNAF Into the Pit</a>
+                                <a href="Secret_of_the_Mimic.html">FNAF Secret of the Mimic</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="menu-elem">
+                        <a href="#" onclick="togglePanel('personnagesPanel')">Personnages▽</a>
+                        <div id="personnagesPanel" class="overlay">
+                            <button class="closebtn" onclick="togglePanel('personnagesPanel')">&times;</button>
+                            <div class="overlay-content">
+                                <p>Personnages</p>
+                                <div id="personnagesrespon" class="sous-menu">
+                                    <div class="sous-menu-elem">
+                                        <a href="#" onclick="togglePanel('fnaf1Panel')">FNAF 1▽</a>
+                                        <div id="fnaf1Panel" class="overlay">
+                                            <button class="closebtn" onclick="togglePanel('fnaf1Panel')">&times;</button>
+                                            <div class="overlay-content">
+                                                <p>FNAF 1 Personnages</p>
+                                                <a href="freddy_page.html#Freddy">Freddy</a>
+                                                <a href="bonnie_page.html#Bonnie">Bonnie</a>
+                                                <a href="chica_page.html#Chica">Chica</a>
+                                                <a href="foxy_page.html#Foxy">Foxy</a>
+                                                <a href="freddy_page.html#Golden-Freddy">Golden Freddy</a>
+                                                <a href="humains.html#Phone-guy">Phone Guy</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <a href="#" onclick="togglePanel('fnaf2Panel')">FNAF 2▽</a>
+                                        <div id="fnaf2Panel" class="overlay">
+                                            <button class="closebtn" onclick="togglePanel('fnaf2Panel')">&times;</button>
+                                            <div class="overlay-content">
+                                                <p>FNAF 2 Personnages</p>
+                                                <a href="freddy_page.html#Withered-freddy">Withered Freddy</a>
+                                                <a href="freddy_page.html#Toy-freddy">Toy Freddy</a>
+                                                <a href="bonnie_page.html#Withered-bonnie">Withered Bonnie</a>
+                                                <a href="bonnie_page.html#Toy-bonnie">Toy Bonnie</a>
+                                                <a href="chica_page.html#Withered-chica">Withered Chica</a>
+                                                <a href="chica_page.html#Toy-chica">Toy Chica</a>
+                                                <a href="foxy_page.html#Withered-foxy">Withered Foxy</a>
+                                                <a href="foxy_page.html#Mangle">Mangle</a>
+                                                <a href="freddy_page.html#Golden-freddy">Golden Freddy</a>
+                                                <a href="autres_animatronique.html#Marionette">Marionette</a>
+                                                <a href="autres_animatronique.html#Balloon-boy">Balloon Boy</a>
+                                                <a href="freddy_page.html#Shadow-Freddy">Shadow Freddy</a>
+                                                <a href="bonnie_page.html#Shadow-bonnie">RWQFSFASXC</a>
+                                                <a href="famille_afton.html#William">William Afton</a>
+                                            </div>
+                                        </div>
+                                        <div>
+                                          <a href="#" onclick="togglePanel('fnaf3Panel')">FNAF 3▽</a>
+                                          <div id="fnaf3Panel" class="overlay">
+                                              <button class="closebtn" onclick="togglePanel('fnaf3Panel')">&times;</button>
+                                              <div class="overlay-content">
+                                                  <p>FNAF 3 Personnages</p>
+                                                  <a href="bonnie_page.html#Springtrap">Springtrap</a>
+                                                  <a href="famille_afton.html#William">William Afton</a>
+                                                  <a href="freddy_page.html#Phantom-freddy">Phantom Freddy</a>
+                                                  <a href="chica_page.html#Phantom-chica">Phantom Chica</a>
+                                                  <a href="foxy_page.html#Phantom-foxy">Phantom Foxy</a>
+                                                  <a href="foxy_page.html#Phantom-mangle">Phantom Mangle</a>
+                                                  <a href="autres_animatronique.html#Marionnette">Phantom Marionnette</a>
+                                                  <a href="autres_animatronique.html#Phantom-balloon-boy">Phantom Balloon Boy</a>
+                                              </div>
+                                          </div>
+                                        </div>
+                                        <div>
+                                          <a href="#" onclick="togglePanel('fnaf4Panel')">FNAF 4▽</a>
+                                          <div id="fnaf4Panel" class="overlay">
+                                              <button class="closebtn" onclick="togglePanel('fnaf4Panel')">&times;</button>
+                                              <div class="overlay-content">
+                                                  <p>FNAF 4 Personnages</p>
+                                                  <a href="famille_afton.html#Evan">The Crying Child</a>
+                                                  <a href="freddy_page.html#Nightmare-freddy">Nightmare Freddy</a>
+                                                  <a href="bonnie_page.html#Nightmare-bonnie">Nightmare Bonnie</a>
+                                                  <a href="chica_page.html#Nightmare-chica">Nightmare Chica</a>
+                                                  <a href="foxy_page.html#Nightmare-foxy">Nightmare Foxy</a>
+                                                  <a href="freddy_page.html#Nightmare-fredbear">Nightmare Fredbear</a>
+                                                  <a href="freddy_page.html#Nightmare">Nightmare</a>
+                                                  <a href="bonnie_page.html#Plushtrap">Plushtrap</a>
+                                              </div>
+                                          </div>
+                                        </div>
+                                        <div>
+                                          <a href="#" onclick="togglePanel('fnaf4HPanel')">FNAF 4 Edition Halloween▽</a>
+                                          <div id="fnaf4HPanel" class="overlay">
+                                              <button class="closebtn" onclick="togglePanel('fnaf4HPanel')">&times;</button>
+                                              <div class="overlay-content">
+                                                  <p>FNAF 4 editions Halloween Personnages</p>
+                                                  <a href="famille_afton.html#Crying-Child">The Crying Child</a>
+                                                  <a href="freddy_page.html#Nightmare-freddy">Nightmare Freddy</a>
+                                                  <a href="bonnie_page.html#Jack-O-Bonnie">Jack-O-Bonnie</a>
+                                                  <a href="chica_page.html#Jack-O-Chica">Jack-O-Chica</a>
+                                                  <a href="foxy_page.html#Nightmare-Mangle">Nightmare Mangle</a>
+                                                  <a href="freddy_page.html#Nightmare-Fredbear">Nightmare Fredbear</a>
+                                                  <a href="autres_animatronique.html#Nightmarionnee">Nightmarionnee</a>
+                                                  <a href="autres_animatronique.html#Nightmare-Balloon-Boy">Nightmare Balloon Boy</a>
+                                              </div>
+                                          </div>
+                                        </div>
+                                        <div>
+                                          <a href="#" onclick="togglePanel('fnaf5Panel')">FNAF Sister Location▽</a>
+                                          <div id="fnaf5Panel" class="overlay">
+                                              <button class="closebtn" onclick="togglePanel('fnaf5Panel')">&times;</button>
+                                              <div class="overlay-content">
+                                                  <p>FNAF Sister Location Personnages</p>
+                                                  <a href="famille_afton.html#Micheal">Micheal Afton</a>
+                                                  <a href="famille_afton.html#Elizabeth">Elizabeth Afton</a>
+                                                  <a href="autres_animatronique.html#Circus-Baby">Circus Baby</a>
+                                                  <a href="autres_animatronique.html#Ballora">Ballora</a>
+                                                  <a href="freddy_page.html#Funtime-Freddy">Funtime Freddy</a>
+                                                  <a href="foxy_page.html#Funtime-Foxy">Funtime Foxy</a>
+                                                  <a href="autres_animatronique.html#Bidybab">Bidybab</a>
+                                                  <a href="autres_animatronique.html#Minireena">Minireena</a>
+                                                  <a href="freddy_page.html#Yenndo">Yenndo</a>
+                                                  <a href="autres_animatronique.html#Ennard">Ennard</a>
+                                                  <a href="autres_animatronique.html#Lolbit">Lolbit</a>
+                                                  <a href="autres_animatronique.html#Unité-Dextre">Unité Dextre</a>
+                                              </div>
+                                          </div>
+                                        </div>
+                                        <div>
+                                          <a href="#" onclick="togglePanel('fnafworldPanel')">FNAF World▽</a>
+                                          <div id="fnafworldPanel" class="overlay">
+                                              <button class="closebtn" onclick="togglePanel('fnafworldPanel')">&times;</button>
+                                              <div class="overlay-content">
+                                                  <p>FNAF World Personnages</p>
+                                                  <a href="autres_animatronique.html#Old-Man-Consequences">Old Man Consequences</a>
+                                                  <a href="freddy_page.html#Freddy" >Freddy</a>
+                                                  <a href="autres_animatronique.html#Endo-01">Endo 01</a>
+                                                  <a href="foxy_page.html#Mangle">Mangle</a>
+                                                  <a href="freddy_page.html#Withered-freddy" >Withered Freddy</a>
+                                                  <a href="chica_page.html#Chica">Chica</a>
+                                                  <a href="autres_animatronique.html#JJ">JJ</a>
+                                                  <a href="bonnie_page.html#Springtrap">Springtrap</a>
+                                              </div>
+                                          </div>
+                                        </div>
+                                        <div>
+                                          <a href="#" onclick="togglePanel('fnaf6Panel')">FNAF Pizza Simulator▽</a>
+                                          <div id="fnaf6Panel" class="overlay">
+                                              <button class="closebtn" onclick="togglePanel('fnaf6Panel')">&times;</button>
+                                              <div class="overlay-content">
+                                                  <p>FNAF Pizza Simulator Personnages</p>
+                                                  <a href="bonnie_page.html#Springtrap">Scraptrap</a>
+                                                  <a href="freddy_page.html#Molten-Freddy">Molten Freddy</a>
+                                                  <a href="freddy_page.html#Lefty">Lefty</a>
+                                                  <a href="autres_animatronique.html#Scrap-Baby">Scrap Baby</a>
+                                                  <a href="chica_page.html#Funtime-Chica">Funtime Chica</a>
+                                                  <a href="autres_animatronique.html#Marionnette">Marionnette</a>
+                                                  <a href="freddy_page.html#Rockstar-Freddy">Rockstar Freddy</a>
+                                                  <a href="bonnie_page.html#Rockstar-Bonnie">Rockstar Bonnie</a>
+                                                  <a href="chica_page.html#Rockstar-Chica">Rockstar Chica</a>
+                                                  <a href="foxy_page.html#Rockstar-Foxy">Rockstar Foxy</a>
+                                                  <a href="bonnie_page.html#Bonnie">Bonnie</a>
+                                                  <a href="humains.html#Henry">Henry Emily</a>
+                                              </div>
+                                          </div>
+                                        </div>
+                                        <div>
+                                          <a href="#" onclick="togglePanel('UCNPanel')">Ultimate Custom Night▽</a>
+                                          <div id="UCNPanel" class="overlay">
+                                              <button class="closebtn" onclick="togglePanel('UCNPanel')">&times;</button>
+                                              <div class="overlay-content">
+                                                  <p>Ultimate Custom Night Personnages</p>
+                                                  <a href="freddy_page.html#Freddy">Freddy</a>
+                                                  <a href="bonnie_page.html#Bonnie">Bonnie</a>
+                                                  <a href="chica_page.html#Chica">Chica</a>
+                                                  <a href="foxy_page.html#Foxy">Foxy</a>
+                                                  <a href="freddy_page.html#Golden-Freddy">Golden Freddy</a>
+                                                  <a href="humains.html#Phone-guy">Phone Guy</a>
+                                                  <a href="freddy_page.html#Withered-freddy">Withered Freddy</a>
+                                                  <a href="freddy_page.html#Toy-freddy">Toy Freddy</a>
+                                                  <a href="bonnie_page.html#Withered-bonnie">Withered Bonnie</a>
+                                                  <a href="bonnie_page.html#Toy-bonnie">Toy Bonnie</a>
+                                                  <a href="chica_page.html#Withered-chica">Withered Chica</a>
+                                                  <a href="chica_page.html#Toy-chica">Toy Chica</a>
+                                                  <a href="foxy_page.html#Withered-foxy">Withered Foxy</a>
+                                                  <a href="foxy_page.html#Mangle">Mangle</a>
+                                                  <a href="freddy_page.html#Golden-freddy">Golden Freddy</a>
+                                                  <a href="autres_animatronique.html#Marionette">Marionette</a>
+                                                  <a href="autres_animatronique.html#Balloon-boy">Balloon Boy</a>
+                                                  <a href="freddy_page.html#Shadow-Freddy">Shadow Freddy</a>
+                                                  <a href="bonnie_page.html#Shadow-bonnie">RWQFSFASXC</a>
+                                                  <a href="bonnie_page.html#Springtrap">Springtrap</a>
+                                                  <a href="famille_afton.html#William">William Afton</a>
+                                                  <a href="freddy_page.html#Phantom-freddy">Phantom Freddy</a>
+                                                  <a href="chica_page.html#Phantom-chica">Phantom Chica</a>
+                                                  <a href="foxy_page.html#Phantom-foxy">Phantom Foxy</a>
+                                                  <a href="foxy_page.html#Phantom-mangle">Phantom Mangle</a>
+                                                  <a href="autres_animatronique.html#Marionnette">Phantom Marionnette</a>
+                                                  <a href="autres_animatronique.html#Phantom-balloon-boy">Phantom Balloon Boy</a>
+                                                  <a href="freddy_page.html#Nightmare-freddy">Nightmare Freddy</a>
+                                                  <a href="bonnie_page.html#Nightmare-bonnie">Nightmare Bonnie</a>
+                                                  <a href="chica_page.html#Nightmare-chica">Nightmare Chica</a>
+                                                  <a href="foxy_page.html#Nightmare-foxy">Nightmare Foxy</a>
+                                                  <a href="freddy_page.html#Nightmare-fredbear">Nightmare Fredbear</a>
+                                                  <a href="freddy_page.html#Nightmare">Nightmare</a>
+                                                  <a href="freddy_page.html#Nightmare-freddy">Nightmare Freddy</a>
+                                                  <a href="chica_page.html#Jack-O-Chica">Jack-O-Chica</a>
+                                                  <a href="foxy_page.html#Nightmare-Mangle">Nightmare Mangle</a>
+                                                  <a href="freddy_page.html#Nightmare-Fredbear">Nightmare Fredbear</a>
+                                                  <a href="autres_animatronique.html#Nightmarionnee">Nightmarionnee</a>
+                                                  <a href="autres_animatronique.html#Nightmare-Balloon-Boy">Nightmare Balloon Boy</a>
+                                                  <a href="famille_afton.html#Elizabeth">Elizabeth Afton</a>
+                                                  <a href="autres_animatronique.html#Circus-Baby">Circus Baby</a>
+                                                  <a href="autres_animatronique.html#Ballora">Ballora</a>
+                                                  <a href="freddy_page.html#Funtime-Freddy">Funtime Freddy</a>
+                                                  <a href="foxy_page.html#Funtime-Foxy">Funtime Foxy</a>
+                                                  <a href="autres_animatronique.html#Bidybab">Bidybab</a>
+                                                  <a href="autres_animatronique.html#Minireena">Minireena</a>
+                                                  <a href="freddy_page.html#Yenndo">Yenndo</a>
+                                                  <a href="autres_animatronique.html#Ennard">Ennard</a>
+                                                  <a href="autres_animatronique.html#Old-Man-Consequences">Old Man Consequences</a>
+                                                  <a href="bonnie_page.html#Springtrap">Scraptrap</a>
+                                                  <a href="freddy_page.html#Molten-Freddy">Molten Freddy</a>
+                                                  <a href="freddy_page.html#Lefty">Lefty</a>
+                                                  <a href="autres_animatronique.html#Scrap-Baby">Scrap Baby</a>
+                                                  <a href="chica_page.html#Funtime-Chica">Funtime Chica</a>
+                                                  <a href="autres_animatronique.html#Marionnette">Marionnette</a>
+                                                  <a href="freddy_page.html#Rockstar-Freddy">Rockstar Freddy</a>
+                                                  <a href="bonnie_page.html#Rockstar-Bonnie">Rockstar Bonnie</a>
+                                                  <a href="chica_page.html#Rockstar-Chica">Rockstar Chica</a>
+                                                  <a href="foxy_page.html#Rockstar-Foxy">Rockstar Foxy</a>
+                                              </div>
+                                          </div>
+                                        </div>
+                                        <div>
+                                          <a href="#" onclick="togglePanel('HWPanel')">Help wanted▽</a>
+                                          <div id="HWPanel" class="overlay">
+                                              <button class="closebtn" onclick="togglePanel('HWPanel')">&times;</button>
+                                              <div class="overlay-content">
+                                                  <p>Help wanted Personnages</p>
+                                                  <a href="freddy_page.html#Freddy">Freddy</a>
+                                                  <a href="bonnie_page.html#Bonnie">Bonnie</a>
+                                                  <a href="chica_page.html#Chica">Chica</a>
+                                                  <a href="foxy_page.html#Foxy">Foxy</a>
+                                                  <a href="freddy_page.html#Golden-Freddy">Golden Freddy</a>
+                                                  <a href="humains.html#Phone-guy">Phone Guy</a>
+                                                  <a href="bonnie_page.html#Plushtrap">Plushtrap</a>
+                                                  <a href="bonnie_page.html#Springtrap">Springtrap</a>
+                                                  <a href="freddy_page.html#Phantom-freddy">Phantom Freddy</a>
+                                                  <a href="chica_page.html#Phantom-chica">Phantom Chica</a>
+                                                  <a href="foxy_page.html#Phantom-foxy">Phantom Foxy</a>
+                                                  <a href="foxy_page.html#Phantom-mangle">Phantom Mangle</a>
+                                                  <a href="autres_animatronique.html#Marionnette">Phantom Marionnette</a>
+                                                  <a href="autres_animatronique.html#Phantom-balloon-boy">Phantom Balloon Boy</a>
+                                                  <a href="freddy_page.html#Toy-freddy">Toy Freddy</a>
+                                                  <a href="bonnie_page.html#Toy-bonnie">Toy Bonnie</a>
+                                                  <a href="chica_page.html#Toy-chica">Toy Chica</a>
+                                                  <a href="foxy_page.html#Mangle">Mangle</a>
+                                                  <a href="autres_animatronique.html#Marionette">Marionette</a>
+                                              </div>
+                                          </div>
+                                        </div>
+                                        <div>
+                                          <a href="#" onclick="togglePanel('HWDLC')">Help Wanted DLC▽</a>
+                                          <div id="HWDLC" class="overlay">
+                                              <button class="closebtn" onclick="togglePanel('HWDLC')">&times;</button>
+                                              <div class="overlay-content">
+                                                  <p>Help Wanted DLC Personnages</p>
+                                                  <a href="freddy_page.html#Nightmare-freddy">Nightmare Freddy</a>
+                                                  <a href="bonnie_page.html#Nightmare-bonnie">Nightmare Bonnie</a>
+                                                  <a href="chica_page.html#Nightmare-chica">Nightmare Chica</a>
+                                                  <a href="foxy_page.html#Nightmare-foxy">Nightmare Foxy</a>
+                                                  <a href="bonnie_page.html#Jack-O-Bonnie">Jack-O-Bonnie</a>
+                                                  <a href="chica_page.html#Jack-O-Chica">Jack-O-Chica</a>
+                                                  <a href="freddy_page.html#DREADBEAR">DREADBEAR</a>
+                                                  <a href="foxy_page.html#Grimm-Foxy">Grimm Foxy</a>
+                                              </div>
+                                          </div>
+                                        </div>
+                                        <div>
+                                          <a href="#" onclick="togglePanel('SBPanel')">Security Breach▽</a>
+                                          <div id="SBPanel" class="overlay">
+                                              <button class="closebtn" onclick="togglePanel('SBPanel')">&times;</button>
+                                              <div class="overlay-content">
+                                                  <p>Security Breach Personnages</p>
+                                                  <a href="freddy_page.html#Glamrock-Freddy">Glamrock Freddy</a>
+                                                  <a href="chica_page.html#Glamrock-Chica">Glamrock Chica</a>
+                                                  <a href="foxy_page.html#Roxanne-Wolf">Roxanne Wolf</a>
+                                                  <a href="autres_animatronique.html#Montgomery-Gator">Montgomery Gator</a>
+                                                  <a href="autres_animatronique.html#Responsable-Garderie">Responsable de Garderie</a>
+                                                  <a href="autres_animatronique.html#DJ-Music-Man">DJ Music Man</a>
+                                                  <a href="humains.html#Vanessa">Vanessa/Vanny</a>
+                                                  <a href="bonnie_page.html#Springtrap">BurnTrap</a>
+                                                  <a href="autres_animatronique.html#The-Blob">The Blob</a>
+                                                  <a href="humains.html#Gregory">Gregory</a>
+                                                  <a href="autres_animatronique.html#Glamrock-Endo">Glamrock Endo</a>
+                                              </div>
+                                          </div>
+                                        </div>
+                                        <div>
+                                          <a href="#" onclick="togglePanel('SBR')">Security Breach Ruined▽</a>
+                                          <div id="SBR" class="overlay">
+                                              <button class="closebtn" onclick="togglePanel('SBR')">&times;</button>
+                                              <div class="overlay-content">
+                                                  <p>Security Breach Ruined Personnages</p>
+                                                  <a href="freddy_page.html#Glamrock-Freddy">Glamrock Freddy</a>
+                                                  <a href="chica_page.html#Glamrock-Chica">Glamrock Chica</a>
+                                                  <a href="foxy_page.html#Roxanne-Wolf">Roxanne Wolf</a>
+                                                  <a href="autres_animatronique.html#Montgomery-Gator">Montgomery Gator</a>
+                                                  <a href="autres_animatronique.html#Responsable-Garderie">Responsable de Garderie</a>
+                                                  <a href="autres_animatronique.html#DJ-Music-Man">DJ Music Man</a>
+                                                  <a href="humains.html#Vanessa">Vanessa/Vanny</a>
+                                                  <a href="bonnie_page.html#Springtrap">BurnTrap</a>
+                                                  <a href="autres_animatronique.html#The-Blob">The Blob</a>
+                                                  <a href="humains.html#Gregory">Gregory</a>
+                                                  <a href="autres_animatronique.html#Glamrock-Endo">Glamrock Endo</a>
+                                              </div>
+                                          </div>
+                                        </div>
+                                        <div>
+                                          <a href="#" onclick="togglePanel('HW2')">Help Wanted▽</a>
+                                          <div id="HW2" class="overlay">
+                                              <button class="closebtn" onclick="togglePanel('HW2')">&times;</button>
+                                              <div class="overlay-content">
+                                                  <p>Help Wanted Personnages</p>
+                                                  <a href="foxy_page.html#Foxy">Foxy</a>
+                                                  <a href="autres_animatronique.html#Circus-Baby">Circus Baby</a>
+                                                  <a href="autres_animatronique.html#Ballora">Ballora</a>
+                                                  <a href="freddy_page.html#Funtime-Freddy">Funtime Freddy</a>
+                                                  <a href="foxy_page.html#Funtime-Foxy">Funtime Foxy</a>
+                                                  <a href="autres_animatronique.html#Bidybab">Bidybab</a>
+                                                  <a href="autres_animatronique.html#Minireena">Minireena</a>
+                                                  <a href="freddy_page.html#Yenndo">Yenndo</a>
+                                                  <a href="freddy_page.html#Lefty">Lefty</a>
+                                                  <a href="chica_page.html#Funtime-Chica">Funtime Chica</a>
+                                                  <a href="freddy_page.html#DREADBEAR">DREADBEAR</a>
+                                                  <a href="autres_animatronique.html#Glitchtrap">Glitchtrap</a>
+                                                  <a href="freddy_page.html#Glamrock-Freddy">Glamrock Freddy</a>
+                                                  <a href="chica_page.html#Glamrock-Chica">Glamrock Chica</a>
+                                                  <a href="foxy_page.html#Roxanne-Wolf">Roxanne Wolf</a>
+                                                  <a href="autres_animatronique.html#Responsable-Garderie">Responsable de Garderie</a>
+                                                  <a href="autres_animatronique.html#DJ-Music-Man">DJ Music Man</a>
+                                                  <a href="humains.html#Vanessa">Vanny</a>
+                                                  <a href="autres_animatronique.html#Glamrock-Endo">Glamrock Endo</a>
+                                                  <a href="Secret_of_the_Mimic.html#SotM">The Mimic</a>
+                                                  <a href="humains.html#Cassie">Cassie</a>
+                                                  <a href="bonnie_page.html#Glamrock_Bonnie">Glamrock Bonnie</a>
+                                              </div>
+                                          </div>
+                                        </div>
+                                        <div>
+                                          <a href="#" onclick="togglePanel('ITP')">Into the pit▽</a>
+                                          <div id="ITP" class="overlay">
+                                              <button class="closebtn" onclick="togglePanel('ITP')">&times;</button>
+                                              <div class="overlay-content">
+                                                  <p>Into the pit Personnages</p>
+                                                  <a href="humains.html#Oswald">Oswald</a>
+                                                  <a href="humains.html#Pere-Oswald">Père de Oswald</a>
+                                                  <a href="humains.html#Mere-Oswald">Mère de Oswald</a>
+                                                  <a href="humains.html#Jeff">Jeff</a>
+                                                  <a href="freddy_page.html#Freddy">Freddy</a>
+                                                  <a href="bonnie_page.html#Bonnie">Bonnie</a>
+                                                  <a href="chica_page.html#Chica">Chica</a>
+                                                  <a href="bonnie_page.html#Spring-Bonnie">Spring Bonnie</a>
+                                                  <a href="freddy_page.html#Gabrielle">Gabrielle</a>
+                                              </div>
+                                          </div>
+                                        </div>
+                                        <div>
+                                          <a href="#" onclick="togglePanel('TJOC')">The Joy Of Creation▽</a>
+                                          <div id="TJOC" class="overlay">
+                                              <button class="closebtn" onclick="togglePanel('TJOC')">&times;</button>
+                                              <div class="overlay-content">
+                                                  <p>The Joy Of Creation Personnages</p>
+                                                  <a href="freddy_page.html#Ignited-Freddy">Ignited Freddy</a>
+                                                  <a href="bonnie_page.html#Ignited-Bonnie">Ignited Bonnie</a>
+                                                  <a href="chica_page.html#Ignited-Chica">Ignited Chica</a>
+                                                  <a href="foxy_page.html#Ignited-Foxy">Ignited Foxy</a>
+                                                  <a href="bonnie_page.html#Ignited-Springtrap">Ignited Springtrap</a>
+                                                  <a href="freddy_page.html#Ignited-Golden-Freddy">Ignited Golden Freddy</a>
+                                                  <a href="autres_animatronique.html#Creation">Creation</a>
+                                                  <a href="autres_animatronique.html#Endo-C-Mouth">Endo C "Mouth"</a>
+                                                  <a href="humains.html#Val-Cawthon">Val Cawthon</a>
+                                                  <a href="autres_animatronique.html#Endo-B-Angel">Endo B "Angel"</a>
+                                                  <a href="autres_animatronique.html#Endo-R-Blue">Endo R "Blue"</a>
+                                                  <a href="autres_animatronique.html#Endo-F-Red">Endo F "Red"</a>
+                                              </div>
+                                          </div>
+                                        </div>
+                                        <div>
+                                          <a href="#" onclick="togglePanel('afton-family-panel')">Afton family▽</a>
+                                          <div id="afton-family-panel" class="overlay">
+                                              <button class="closebtn" onclick="togglePanel('afton-family-panel')">&times;</button>
+                                              <div class="overlay-content">
+                                                  <p>Afton Family Personnages</p>
+                                                  <a href="famille_afton.html#William">William Afton</a>
+                                                  <a href="famille_afton.html#Micheal">Micheal Afton</a>
+                                                  <a href="famille_afton.html#Elizabeth">Elizabeth Afton</a>
+                                                  <a href="famille_afton.html#Evan">The Crying Child</a>
+                                                  <a href="famille_afton.html#Mme-Afton">Mme Afton</a>
+                                              </div>
+                                          </div>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="menu-elem">
+                        <a href="#" onclick="togglePanel('autresPanel')">Autre▽</a>
+                        <div id="autresPanel" class="overlay">
+                            <button class="closebtn" onclick="togglePanel('autresPanel')">&times;</button>
+                            <div class="overlay-content">
+                                <p>Autre</p>
+                                <a href="FNAF_Movie.html">FNAF Movie</a>
+                                <a href="The_Joy_of_Creation.html">The Joy of Creation</a>
+                                <a href="Lien_Intéressant.html">Lien Intéressant</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="Avis.html">Avis</a>
+                    <div class="menu-elem">
+                      <a href="#" onclick="togglePanel('sommaire')">Sommaire▽</a>
+                      <div id="sommaire" class="overlay">
+                          <button class="closebtn" onclick="togglePanel('sommaire')">&times;</button>
+                          <div class="overlay-content">
+                              <p>Sommaire</p>
+                              <a href="#WDLC">Description du jeu</a>
+                              <a href="#carousel-fnaf1">Captures d'écrans</a>
+                              <a href="#perso">Personnages</a>
+                          </div>
+                    </div>
+                </div>
+                </div>
+          </div>
+      </div>
+                </div>
     
     <h1 class="title" id="WDLC">Help Wanted DLC</h1>
     <hr>
